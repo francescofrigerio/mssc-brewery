@@ -10,9 +10,13 @@ import java.util.UUID;
 /**
  * Created by jt on 2019-04-20.
  */
+// Data Annoration permette di creare
+// in automatico i metodi getter setters ecc.
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+// Buildet annotation permette di lavorare con il
+// builder pattern . Vedere la classe BeerServiceImpl
 @Builder
 public class BeerDto {
 

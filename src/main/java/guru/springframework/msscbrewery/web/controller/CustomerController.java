@@ -18,7 +18,8 @@ import java.util.UUID;
 // invece
 // http://localhost:8080/api/v1/customer/foo -> badrequest  "status": 400,
 @Slf4j
-@RequestMapping("api/v1/customer")
+//@RequestMapping("api/v1/customer")
+@RequestMapping("/api/v1/customer")
 @RestController
 public class CustomerController {
 
@@ -69,7 +70,7 @@ public class CustomerController {
     // usando  la libreria jackson sull'oggetto Dto
     @PutMapping({"/{customerId}"})
     //public ResponseEntity<CustomerDto> handleUpdate(@PathVariable("beerId") UUID beerId , CustomerDto customerDto)  {
-    public ResponseEntity<CustomerDto> handleUpdate(@PathVariable("beerId") UUID beerId , @RequestBody  CustomerDto customerDto)  {
+    public ResponseEntity<CustomerDto> handleUpdate(@PathVariable("customerId") UUID beerId , @RequestBody  CustomerDto customerDto)  {
 
         customerService.updateCustomer(beerId, customerDto);
         return new ResponseEntity(HttpStatus.NO_CONTENT);

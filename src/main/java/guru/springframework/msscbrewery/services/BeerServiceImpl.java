@@ -40,12 +40,12 @@ public class BeerServiceImpl implements BeerService {
     @Override
     public void updateBeer(UUID beerId, BeerDto beerDto) {
         //todo impl - would add a real impl to update beer
-        log.debug("[CustomerServiceImpl] START updateBeer " + beerDto.getBeerName());
+        log.debug("[BaseServiceImpl] START updateBeer " + beerDto.getBeerName());
     }
 
     @Override
     public void deleteById(UUID beerId) {
-        log.debug("[CustomerServiceImpl] START deleteById " + beerId.toString());
+        log.debug("[BaseServiceImpl] START deleteById " + beerId.toString());
         //todo impl - would add a real impl to update beer
     }
 

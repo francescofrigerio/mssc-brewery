@@ -131,7 +131,13 @@ public class BeerController {
     }
 
     @DeleteMapping({"/{beerId}"})
+    // Per Testare il client
+    // vedere il progetto mssc-brewery-client
+    // Il test semplice sulla delete
+    // dovrebbe dare un eccezzione num 400
+    // basta settare BAD_REQUEST come status
     @ResponseStatus(HttpStatus.NO_CONTENT)
+    //@ResponseStatus(HttpStatus.BAD_REQUEST)
     public void deleteBeer(@PathVariable("beerId") UUID beerId){
         beerService.deleteById(beerId);
     }

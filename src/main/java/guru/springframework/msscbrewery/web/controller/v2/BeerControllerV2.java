@@ -45,7 +45,7 @@ public class BeerControllerV2 {
         // LEZIONE 76
         //BeerDtoV2 savedDto = beerServiceV2.saveNewBeer(beerDto);
         // HttpHeaders headers = new HttpHeaders();
-        log.debug("in handle post...");
+        log.debug("in handle post modificato il 30082023...");
 
         val savedDto = beerServiceV2.saveNewBeer(beerDto);
         var headers = new HttpHeaders();
